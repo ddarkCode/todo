@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+
+    <!-- <h1>Hello</h1> -->
+<main>
+    <div id="div-heading">
+        <h1><%= date %></h1>
+    </div>
+    <div id="container">
+        <%data.forEach(item => {%>
+            <div class="input-container">
+                <input type="checkbox" name="" id="">
+            <p><%= item %></p>
+            </div>
+        <%})%>
+    
+        <form action="/" method="post">
+            <input type="text" name="newTodo" autocomplete="off" autofocus placeholder="New Item">
+            <button type="submit" class="add-icon">
+                <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 12.75V18H12.75V12.75H18V11.25H12.75V6H11.25V11.25H6V12.75H11.25Z" fill="#ffffff"/> </g>
+                    
+                    </svg>
+                </button>
+        </form>
+    </div>
+    
+</main>
+
+<%- include('partials/footer.ejs') %>
