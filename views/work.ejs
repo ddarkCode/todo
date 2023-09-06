@@ -3,14 +3,14 @@
     <!-- <h1>Hello</h1> -->
 <main>
     <div id="div-heading">
-        <h1>The Hustle Continues</h1>
+        <h1>(Work Tasks) The Hustle Continues</h1>
     </div>
     <div id="container">
         <%data.forEach(item => {%>
-            <div class="input-container">
-                <input type="checkbox" name="" id="">
-            <p><%= item %></p>
-            </div>
+            <form action="/work/delete" method="post" class="input-container">
+                <input onchange="this.form.submit()" type="checkbox" name="todoId" value=<%= item._id %> id="">
+            <p><%= item.title %></p>
+            </form>
         <%})%>
     
         <form action="/work" method="post">

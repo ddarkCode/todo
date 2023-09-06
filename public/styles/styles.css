@@ -275,6 +275,16 @@ footer {
   margin: 100px 0;
 }
 
+.input-container button {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+}
+.input-container button {
+  outline: none;
+}
+
 @media only screen and (max-width: 600px) {
   main {
     margin: 50px 20px 0;

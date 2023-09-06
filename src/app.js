@@ -24,6 +24,7 @@ try {
 app.use(morgan('combined'));
 app.use(express.static('public'));
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.use('/today', todayRouter());
 app.use('/work', WorkTaskRoutes());
