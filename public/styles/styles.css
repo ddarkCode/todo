@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -92,6 +92,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -120,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -129,12 +130,11 @@ table {
 }
 
 body {
-  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
-  font-family: "Caveat", cursive;
-  font-family: "Prompt", sans-serif;
+  font-family: 'Caveat', cursive;
+  font-family: 'Prompt', sans-serif;
 }
 
-img {
+/* img {
   object-fit: cover;
   width: 20px;
   height: 20px;
@@ -181,9 +181,10 @@ ul {
 li {
   height: 100%;
   width: 120px;
-}
+} */
 
 /* Main Page  */
+/*
 
 main {
   display: flex;
@@ -311,4 +312,4 @@ footer {
   .add-icon {
     margin-right: 5px;
   }
-}
+} */

@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: #424d6b;
+  padding-top: 20px !important;
+}
+
+.header > .logo {
+  width: 100%;
+  height: 130px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

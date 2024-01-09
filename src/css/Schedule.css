@@ -1,0 +1,44 @@
+.schedule {
+  border: 1px dotted #f0d787;
+  margin: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #45506d;
+  color: #fff;
+  width: 30%;
+  min-height: 200px;
+}
+.trash {
+  cursor: pointer;
+}
+.schedule > div {
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted #f0d787;
+  padding: 0 5px 5px 5px;
+}
+.schedule time {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.schedule p {
+  font-size: 0.9em;
+  line-height: 1.7;
+  letter-spacing: 1.6px;
+  margin: 10px 5px 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .schedule {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .schedule {
+    width: 98%;
+  }
+}

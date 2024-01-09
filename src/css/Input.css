@@ -1,0 +1,25 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.input-group label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.input-group input {
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: #424d6b;
+  background-color: #fff;
+}
+.input-group input:active {
+  color: #424d6b;
+}

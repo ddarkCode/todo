@@ -1,0 +1,15 @@
+.auth-button-container {
+  text-align: center;
+}
+
+.auth-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #424d6b;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+}
