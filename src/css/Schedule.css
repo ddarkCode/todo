@@ -20,9 +20,17 @@
   border-bottom: 1px dotted #f0d787;
   padding: 0 5px 5px 5px;
 }
-.schedule time {
+.schedule > div > aside {
+  display: flex;
+  flex-direction: column;
+}
+.schedule time,
+.schedule span {
   font-style: italic;
   font-size: 12px;
+}
+.schedule span {
+  margin-bottom: 5px;
 }
 
 .schedule p {

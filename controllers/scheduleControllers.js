@@ -20,7 +20,7 @@ export default (function scheduleController() {
   const getAllSchedules = async (req, res, next) => {
     const { username } = req.user;
     try {
-      const foundSchedules = await Schedule.find({ username });
+      const foundSchedules = (await Schedule.find({ username })).reverse();
       return res.status(200).json(foundSchedules);
     } catch (err) {
       return next(err);

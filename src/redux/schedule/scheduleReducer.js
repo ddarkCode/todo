@@ -39,7 +39,7 @@ const authSlice = createSlice({
       state.schedules = action.payload;
     });
     builder.addCase(addSchedule.fulfilled, (state, action) => {
-      state.schedules = state.schedules.concat(action.payload);
+      state.schedules = [action.payload, ...state.schedules];
     });
     builder.addCase(removeSchedule.fulfilled, (state, action) => {
       state.schedules = state.schedules.filter(

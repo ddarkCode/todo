@@ -9,11 +9,15 @@ import '../css/Schedule.css';
 
 const Schedule = ({ createdAt, schedule, _id }) => {
   const dispatch = useDispatch();
+  const { date, time } = formatDate(createdAt);
 
   return (
     <div className="schedule">
       <div>
-        <time>{formatDate(createdAt)}</time>
+        <aside>
+          <span>{date}</span>
+          <time>{time}</time>
+        </aside>
         <Trash
           className="trash"
           onClick={() => dispatch(removeSchedule(_id))}
